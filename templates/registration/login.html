@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
-
+{% load crispy_forms_tags %}
 {% block title %}Log In{% endblock title %}
 
 {% block content %}
-    <h2>Log In</h2>
-    <form action="" method="post">
+    <h2 class="text-center mt-5">Log In</h2>
+    <form class="w-25 mx-auto" action="" method="post">
         {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Log In</button>
+        {{ form|crispy }}
+        <button class="btn btn-success ml-2" type="submit">Log In</button>
     </form>
 {% endblock content %}
