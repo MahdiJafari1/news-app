@@ -8,6 +8,9 @@ django = "*"
 django-crispy-forms = "*"
 crispy-bootstrap5 = "*"
 environs = {extras = ["django"], version = "*"}
+psycopg2-binary = "*"
+whitenoise = "*"
+gunicorn = "*"
 
 [dev-packages]
 
