@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     # Locals
     "accounts",
     "pages",
+    "articles",
     
 ]
 
